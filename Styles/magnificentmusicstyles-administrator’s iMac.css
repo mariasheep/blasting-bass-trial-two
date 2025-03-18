@@ -1,0 +1,153 @@
+/*External Stylesheet for Maria's website on Bass Guitar*/
+body /* Defines the overall "wheat" background colour which I think gives a warm and soothing effect to the wesbite. Aligns all content centre rather than having
+        to do them individually*/
+        { background-color:#f5deb3;
+        text-align: center;
+        margin: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1/*The text shadow gives a nice glow to the primary heading to really make it stand out. Times New Roman font differentiates it from the body.*/
+{   text-shadow: -2px -2px 4px mediumturquoise;
+    font-family:'Times New Roman', Times, serif;
+    color: maroon;
+    font-size /*Font Size was too small beforehand*/: 40px;
+}
+
+h2/*As the H2 element often defines new sections in my website, I have decided to make it look like a banner with a dark grey / green background and white bold text.*/{
+    background-color:darkslategrey;
+    color: white;
+    margin-left: 5%; margin-right: 5%;
+    border-style /*The Groove Style on the border gives it a 3D like frame whicih suits the overall feel of the website*/: groove; border-color: coral; border-width: 5px;
+}
+
+h3/*I have designed my third heading to be well suited to smaller subheadings under the H2 Banner-Style subheadings.*/{
+    color:saddlebrown;
+}
+
+h4{
+    color: black
+}
+
+footer{
+     /*Keeps Footer with Copyright Message Visible at all times*/
+    position: fixed;
+    /*These left:0 and bottom:0 tags ensure that there is no unneccessary space below the fixed footer*/
+    left: 0;
+    bottom: 0;
+     /*Keeps Fixed Footer taking up whole width of screen*/
+    width: 100%;
+    background-color: rgb(8, 79, 73);
+    color: white;
+    /*Footer Not Included in Body so the text is set to center.*/
+    text-align: center;
+}
+
+.introductionImages /*This is for the 2 Orange Images on the home page which both have the class "introductionImages. It ensures they take up half the screen each.*/{
+    width: 50%;
+}
+
+
+nav{
+    /*The Border Bottom Style below gives the navigation bar a decorated bar below the brown colour*/
+    border-bottom: 5px solid;color:rgb(160, 218, 157);
+    /*The neutral brown colour matches that of Heading 3 and resembles wood.*/
+    background-color:saddlebrown;
+}
+
+nav ul li 
+    /*Inline shows the navigation options horizontally (side by side) rather than in a list.*/
+    {display: inline;
+    /*Personally Prefer Navigation Font to Vary from the majority of the page's font.*/
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*Set a font size as the automatic was too small.*/
+    font-size: 20px;}
+
+nav ul li a{
+    /*Included text decoration : none, because I wanted the navigation options to become underlined with hover, and not for the underline to always be there.*/
+    text-decoration: none;
+    /*Sets the text colour*/
+    color: rgb(228, 255, 220);
+    /*Equal margins either side ensure that the navigation text lies in the centre.*/
+    margin-right: 4%; margin-left: 4%;
+    }
+
+nav ul li:hover {text-decoration: underline;}
+
+.active{
+    color: mediumturquoise;
+    /*Colour Change and Size Increase on the Selected Page in navigation bar.*/
+    font-size: 1.2em;
+}
+
+#guitarGroup{
+    /*For the picture of a band at the bottom of the home page.*/
+    width: 65%;
+}
+
+table{
+    margin-left: 25%;
+    border: 3px solid darkslategray;
+    /*Specifies that each cell does not have it's own individual border, which appears cluttered.*/
+    border-collapse: collapse;
+}
+td{
+    border: 2px solid rgb(206, 149, 85);
+    /*Allows spacing around the cells.*/
+    padding: .2em .7em;
+}
+thead{
+    text-align: left;
+    background-color: rgb(207, 214, 210) ; 
+}
+tbody{
+    text-align: right;
+}
+tfoot{
+    background-color: rgb(179, 184, 181);
+}
+
+form{
+    margin-left: 10%;
+    margin
+    /*Padding Allows for space before the first question.*/
+    padding: 10px;
+    background-color: rgb(228, 235, 231);
+    border: 4px dashed saddlebrown;
+}
+
+.required{
+    font-weight: bold;
+    color: red;
+}
+
+input[type=text]{
+    width: 33%;
+    text-align: center;
+    /*Specifies the size of the text box*/
+    padding: 6px 10px;
+    /*Specifies the amount of space outside the text box*/
+    margin: 10px 0;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 10px 10px 5px rgb(170, 186, 186);
+}
+
+input[type=checkbox]{
+    text-align: center;
+    margin: 7px 0;
+}
+
+input[type=radio]{
+    margin: 7px 0;
+}
+
+input[type=button]{
+    text-align: center;
+    margin: 5px 0;
+    border-radius: 1em;
+    padding: 3px;
+}
+
+fieldset{
+    border: none;
+}
